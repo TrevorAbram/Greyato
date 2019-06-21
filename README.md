@@ -1,7 +1,11 @@
-# greyato
+# About Greyato
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Greyato is a software development company based in Texas. We focus on building fast, user-friendly websites and applications
+that solve problems for entrepreneurs and business owners.
+### Our Stack
+- Ember.js
+- Firebase
+- Tailwind.css
 
 ## Prerequisites
 
