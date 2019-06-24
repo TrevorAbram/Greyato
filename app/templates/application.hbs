@@ -1,4 +1,59 @@
+<nav class="container mx-auto py-6 px-4 flex flex-row justify-between ">
+  <div class="">
+    <a href="/"><img src="logo-1-colored.png" alt="Greyato Logo" class="w-32"></a>
+  </div>
+  <div class="block md:hidden">
+    <button class="rounded border border-indigo-dark py-4 px-2 text-indigo-dark" onclick="menu-btn">Menu</button>
 
-<h1 class="text-blue-dark mb-3 bg-gray-light">Testing</h1>
+  </div>
+  <div class="hidden md:flex md:flex-row" id="menu-btn">
+    {{#link-to "/" class="nav-link"}}Home{{/link-to}}
+    {{#link-to "index" class="nav-link"}}Work{{/link-to}}
+    {{#link-to "index" class="nav-link"}}Services{{/link-to}}
+    {{#link-to "index" class="nav-link"}}Team{{/link-to}}
+    {{#link-to "index" class="nav-link"}}Journal{{/link-to}}
+    {{#link-to "index" class="nav-link"}}Contact{{/link-to}}
 
-{{outlet}}
+    {{#link-to "index" class="btn-outline "}}Work With Us{{/link-to}}
+
+  </div>
+
+</nav>
+
+<div class="">
+  {{outlet}}
+</div>
+
+
+<footer class="bg-indigo-darkest px-4 py-10 w-full">
+  <div class="container mx-auto">
+    <div class="mb-8">
+      {{#link-to "index" }}<img src="logo-1-main.png" alt="Greyato Logo" class="w-24">{{/link-to}}
+    </div>
+    <div class="flex flex-col md:flex-row">
+      <div class="text-white md:w-2/4 max-w-xs mb-6 flex flex-col">
+        <h4 class="text-indigo-light pb-2 text-sm">About Us</h4>
+        <p class="md:pr-10">We're Greyato, a software development company based in Dallas, Texas crafting digital solutions for innovative companies using Ember.js.</p>
+      </div>
+      <div class="text-white md:w-1/4 mb-6 flex flex-col">
+        <h4 class="text-indigo-light pb-2 text-sm">Links</h4>
+        {{#link-to "index" class="footer-link"}}Work{{/link-to}}
+        {{#link-to "index" class="footer-link"}}Team{{/link-to}}
+        {{#link-to "index" class="footer-link"}}Careers{{/link-to}}
+        {{#link-to "index" class="footer-link"}}Legal{{/link-to}}
+      </div>
+      <div class="md:w-1/4 mb-6 flex flex-col">
+        <h4 class="text-indigo-light pb-2 text-sm">Dev Goods</h4>
+        {{#link-to "index" class="footer-link"}}Journal{{/link-to}}
+        {{#link-to "index" class="footer-link"}}Dev Goodies{{/link-to}}
+      </div>
+      <div class="md:w-1/4 mb-6">
+        <h4 class="text-indigo-light pb-2 text-sm">Contact Us</h4>
+        {{#link-to "index" class="footer-link"}}I have a project!{{/link-to}}
+      </div>
+    </div>
+    <div class="text-white pt-4 pb-4">
+      <h5 class="text-grey-lightest">Copyright 2019 Greyato SDC</h5>
+    </div>
+  </div>
+</footer>

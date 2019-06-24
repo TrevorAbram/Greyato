@@ -15,3 +15,34 @@
  @apply .bg-blue-dark;
 }
 */
+.nav-link {
+  @apply .text-grey .px-4 .py-2 .no-underline
+}
+
+.nav-link:hover {
+  @apply .text-grey-light
+}
+
+.footer-link {
+  @apply .text-white .pb-4 .no-underline
+}
+
+.footer-link:hover {
+  @apply .text-indigo-dark
+}
+
+.btn {
+  @apply .border .border-indigo .rounded .ml-6 .px-4 .py-2 .bg-blue .text-white .no-underline
+}
+
+.btn-outline {
+  @apply .btn .bg-transparent .text-indigo
+}
+
+.btn-outline:hover {
+  @apply .bg-indigo .text-white
+}
+
+.section {
+  @apply .px-4 .py-10 .w-full
+}
