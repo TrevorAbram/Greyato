@@ -46,3 +46,11 @@
 .section {
   @apply .px-4 .py-10 .w-full
 }
+
+.bg-image-one {
+  background: linear-gradient(0deg, rgba(47, 54, 95, 0.8), rgba(47, 54, 95, 0.8)), url("https://s3-alpha-sig.figma.com/img/e92f/fe05/af39cce6df918bb532add1bf9992c12a?Expires=1562544000&Signature=Ad7IcYr3fRJi1~mI0bS2kiCnhZxvQDtthVIi9Y1VxoxV5YVs5bI3~uvNuXIa1F3Vrce3ysKHHWZHL49tFxhVhymYZy0vC59Gw0TNnVbSlxQSbKpw1a8doBmSaFmPWMDEb-1-C3liXqqrgncUGbuZViNv5R8lU6ZINk~WEtRsmy~3OmQxwJMlIIIh7zMCai3X-grU8-GYtNSbTgI9rW~nyLXcDyY5rMowVvNVoolyfWHdIWpBr~9x9qHdvvHP54RQMMj6yJ5Nt~EZsQT6RlB-ZYkhF8T23Rf4rGV4911ejlTdnDzd2Javm4PVC8vzxoCoRp6IsGtic~IahgAWezweyg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
