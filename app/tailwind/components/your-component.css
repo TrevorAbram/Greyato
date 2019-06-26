@@ -16,11 +16,19 @@
 }
 */
 .nav-link {
-  @apply .text-grey .px-4 .py-2 .no-underline
+  @apply .text-grey .px-2 .py-2 .no-underline
 }
 
 .nav-link:hover {
   @apply .text-grey-light
+}
+
+.nav-link:active {
+  @apply .text-indigo-dark
+}
+
+.nav-link:focus {
+  @apply .text-indigo-dark
 }
 
 .footer-link {
