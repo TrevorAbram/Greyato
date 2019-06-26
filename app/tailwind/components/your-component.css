@@ -52,5 +52,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
 
+p {
+  @apply .text-grey-dark .pb-4 .max-w-lg .pt-2 
 }
