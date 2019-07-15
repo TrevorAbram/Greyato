@@ -1,27 +1,29 @@
-<nav class="container mx-auto py-6 px-4 flex flex-row justify-between ">
+<nav class="container mx-auto py-6 px-4 flex flex-row justify-between relative w-full">
   <div class="">
     <a href="/"><img src="logo-1-colored.png" alt="Greyato Logo" class="w-32"></a>
   </div>
   <div class="block md:hidden">
-    <button class="rounded border border-indigo-dark py-4 px-2 text-indigo-dark" onclick="menu-btn">Menu</button>
-
+    <button class="rounded py-4 px-2 w-10 bg-transparent outline-none" id="nav-toggle">
+      <div class="h-1 w-full bg-indigo-dark hover:bg-indigo-light mb-1 rounded"></div>
+      <div class="h-1 w-full bg-indigo-dark hover:bg-indigo-lighter mb-1 rounded"></div>
+      <div class="h-1 w-full bg-indigo-dark hover:bg-indigo-lightest rounded"></div>
+    </button>
   </div>
-  <div class="hidden md:flex md:flex-row" id="menu-btn">
-    {{#link-to "index" class="nav-link"}}Home{{/link-to}}
-    {{#link-to "work" class="nav-link"}}Work{{/link-to}}
-    {{#link-to "services" class="nav-link"}}Services{{/link-to}}
-    {{#link-to "about" class="nav-link"}}About{{/link-to}}
-    {{#link-to "index" class="nav-link"}}Journal{{/link-to}}
-    {{#link-to "contact-us" class="nav-link"}}Contact{{/link-to}}
-
-    {{#link-to "index" class="btn-outline "}}Work With Us{{/link-to}}
+  <div class="absolute md:block nav-menu" id="nav-content">
+    <ul class="list-reset">
+      <li>{{#link-to "index" class="nav-link"}}Home{{/link-to}}</li>
+      <li>{{#link-to "work" class="nav-link"}}Work{{/link-to}}</li>
+      <li>{{#link-to "services" class="nav-link"}}Services{{/link-to}}</li>
+      <li>{{#link-to "about" class="nav-link"}}About{{/link-to}}</li>
+      <li>{{#link-to "index" class="nav-link"}}Journal{{/link-to}}</li>
+      <li>{{#link-to "contact-us" class="btn-outline "}}Work With Us{{/link-to}}</li>
+    </ul>
   </div>
 </nav>
 
 <div class="">
   {{outlet}}
 </div>
-
 
 <footer class="bg-indigo-darkest px-4 py-10 w-full">
   <div class="container mx-auto">
@@ -55,3 +57,11 @@
     </div>
   </div>
 </footer>
+
+<script>
+  var navToggle = document.getElementById("nav-toggle");
+
+  navToggle.onclick = function clickMenu() {
+    document.getElementById("nav-content").classList.toggle("hidden");
+  }
+</script>
