@@ -71,5 +71,37 @@
 }
 
 p {
-  @apply .text-grey-dark .pb-4 .max-w-lg .pt-2
+  @apply .text-grey-dark .pb-4 .max-w-lg .pt-2 .mb-2
+}
+
+h3 {
+  @apply .text-indigo-darkest .font-normal .mb-8 .capitalize
+}
+
+
+/* Slider CSS */
+.slideshow-container {
+  @apply .w-full .relative .m-auto
+}
+
+.slider_test {
+  @apply .hidden
+}
+
+.previous, .next {
+  @apply .absolute .w-auto .-mt-16 .p-16 .text-indigo .font-bold
+}
+
+
+
+.next {
+  right: 0;
+}
+
+.slider-dot {
+  @apply .h-8 .w-8 .bg-indigo-lightest .rounded-lg .mx-4
+}
+
+.slider-dot:hover {
+  @apply .bg-indigo
 }
