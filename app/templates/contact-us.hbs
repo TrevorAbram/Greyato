@@ -5,7 +5,7 @@
 
       <div class="w-full flex-col md:w-1/2 md:mr-4 mb-12 md:mb-0">
         <h3>Get a spec sheet or start a project</h3>
-        <form class="mb-4" action="index.html" method="post">
+        <form class="mb-4" method="POST" data-netlify="true">
           <div class="mb-4">
             <label for=""></label>
             {{input type="text" name="" value=firstName placeholder="What can we call you?" class="w-full rounded px-2 py-4 bg-grey-lightest appearance-none focus:outline-none focus:bg-indigo focus:text-white focus:shadow-lg"}}
@@ -46,7 +46,7 @@
 
           </div>
 
-          <button {{action 'formSubmit'}} class="btn ml-0">Submit</button>
+          <button type="submit" class="btn ml-0">Submit</button>
         </form>
       </div>
 
