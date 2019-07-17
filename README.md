@@ -1,3 +1,6 @@
+##### Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/27c43738-8575-478d-8585-21efc09bb759/deploy-status)](https://app.netlify.com/sites/greyato/deploys)
+
 # About Greyato
 
 Greyato is a software development company based in Texas. We focus on building fast, user-friendly websites and applications
@@ -6,6 +9,8 @@ that solve problems for entrepreneurs and business owners.
 - Ember.js
 - Firebase
 - Tailwind.css
+
+
 
 ## Prerequisites
 
