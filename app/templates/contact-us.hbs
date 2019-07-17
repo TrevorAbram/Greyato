@@ -8,22 +8,22 @@
         <form class="mb-4" action="index.html" method="post">
           <div class="mb-4">
             <label for=""></label>
-            {{input type="text" name="" value=firstName placeholder="What can we call you?" class="w-full rounded px-2 py-4 bg-grey-lightest appearance-none"}}
+            {{input type="text" name="" value=firstName placeholder="What can we call you?" class="w-full rounded px-2 py-4 bg-grey-lightest appearance-none focus:outline-none focus:bg-indigo focus:text-white focus:shadow-lg"}}
           </div>
 
           <div class="mb-4">
             <label for=""></label>
-            {{input type="text" name="" value=emailAddress placeholder="What's a good email?" class="w-full rounded px-2 py-4 bg-grey-lightest appearance-none"}}
+            {{input type="text" name="" value=emailAddress placeholder="What's a good email?" class="w-full rounded px-2 py-4 bg-grey-lightest appearance-none focus:outline-none focus:bg-indigo focus:text-white focus:shadow-lg"}}
           </div>
 
           <div class="mb-4">
             <label for=""></label>
-            {{textarea rows=6 name="" value=projectDetails placeholder="Tell us about your project needs..." class="w-full rounded px-2 py-4 bg-grey-lightest appearance-none"}}
+            {{textarea rows=6 name="" value=projectDetails placeholder="Tell us about your project needs..." class="w-full rounded px-2 py-4 bg-grey-lightest appearance-none focus:outline-none focus:bg-indigo focus:text-white focus:shadow-lg"}}
           </div>
 
           <div class="flex flex-row">
             <div class="w-1/2 block rounded px-2 py-4 bg-grey-lightest appearance-none mb-4 mr-2">
-              <select name="estBudget">
+              <select name="estBudget" class="focus:outline-none">
                 <option value="estBudget-5000">less than $5,000</option>
                 <option value="estBudget-10000">$10,000</option>
                 <option value="estBudget-20000">$20,000</option>
@@ -31,7 +31,7 @@
             </div>
 
             <div class="w-1/2 block rounded px-2 py-4 bg-grey-lightest appearance-none mb-4">
-              <select class="" name="estTimeline">
+              <select class="focus:outline-none" name="estTimeline">
                 <option value="oneMonth"> less than 1 month</option>
                 <option value="threeToSixMonth">3-6 months</option>
                 <option value="SixMonth">6+ months</option>
