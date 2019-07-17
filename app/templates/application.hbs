@@ -1,36 +1,37 @@
-<nav class="container mx-auto py-6 px-4 flex flex-row justify-between w-full">
-  <div class="">
-    <a href="/"><img src="logo-1-colored.png" alt="Greyato Logo" class="w-32"></a>
-  </div>
-  <div class="z-40">
-    <div class="block md:hidden">
-      <button class="rounded py-4 px-2 w-10 bg-transparent outline-none" id="nav-toggle">
+<!-- Mobile Navigation hidden upon md: + viewports -->
+<nav class="container mx-auto py-6 px-4 flex flex-row justify-between w-full z-40">
+  <!-- Logo -->
+  <a href="/" class="inline-block"><img src="logo-1-colored.png" alt="Greyato Logo" class="w-32"></a>
+
+  <!-- Nav menu wrapper -->
+  <div class="nav-menu-wrapper relative w-full relative">
+    <!-- Nav button -->
+    <div class="block md:hidden z-30 absolute" style="right: 0;">
+      <button class="rounded py-4 px-2 w-10 bg-transparent focus:outline-none" id="nav-toggle">
         <div class="h-1 w-full bg-indigo-dark hover:bg-indigo-light mb-1 rounded"></div>
         <div class="h-1 w-full bg-indigo-dark hover:bg-indigo-lighter mb-1 rounded"></div>
         <div class="h-1 w-full bg-indigo-dark hover:bg-indigo-lightest rounded"></div>
       </button>
     </div>
 
+      <!-- Nav-links -->
+      <div class="hidden bg-indigo w-full p-4 absolute z-10 rounded shadow-lg" id="nav-content" style="right: 50px; top: 50px;">
+        <ul class="list-reset text-center">
+          <li class="mb-4">{{#link-to "index" class="nav-link"}}Home{{/link-to}}</li>
+          <li class="mb-4">{{#link-to "work" class="nav-link"}}Work{{/link-to}}</li>
+          <li class="mb-4">{{#link-to "services" class="nav-link"}}Services{{/link-to}}</li>
+          <li class="mb-4">{{#link-to "about" class="nav-link"}}About{{/link-to}}</li>
+          <li class="mb-4">{{#link-to "index" class="nav-link"}}Journal{{/link-to}}</li>
+          <li class="mb-4">{{#link-to "contact-us" class="btn-outline border-white text-white ml-0 "}}Work With Us{{/link-to}}</li>
+        </ul>
+      </div>
 
-    <div class="hidden md:block " id="nav-content">
-      <ul class="hidden md:block md:flex list-reset">
-        <li>{{#link-to "index" class="nav-link"}}Home{{/link-to}}</li>
-        <li>{{#link-to "work" class="nav-link"}}Work{{/link-to}}</li>
-        <li>{{#link-to "services" class="nav-link"}}Services{{/link-to}}</li>
-        <li>{{#link-to "about" class="nav-link"}}About{{/link-to}}</li>
-        <li>{{#link-to "index" class="nav-link"}}Journal{{/link-to}}</li>
-        <li>{{#link-to "contact-us" class="btn-outline "}}Work With Us{{/link-to}}</li>
-      </ul>
-    </div>
+
 
   </div>
+  <!-- End of Nav menu wrapper -->
 </nav>
 
-<nav class="md:hidden container mx-auto py-6 px-4 flex flex-row justify-between w-full">
-  <div class="">
-    <a href="/"><img src="logo-1-colored.png" alt="Greyato Logo" class="w-32"></a>
-  </div>
-</nav>
 
 <div class="">
   {{outlet}}
