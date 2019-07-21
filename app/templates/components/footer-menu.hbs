@@ -1,0 +1,32 @@
+<footer class="bg-indigo-darkest px-4 py-10 w-full">
+  <div class="container mx-auto">
+    <div class="mb-8">
+      {{#link-to "index" }}<img src="logo-1-main.png" alt="Greyato Logo" class="w-24">{{/link-to}}
+    </div>
+    <div class="flex flex-col md:flex-row">
+      <div class="text-white md:w-2/4 max-w-xs mb-6 flex flex-col">
+        <h4 class="text-indigo-light pb-2 text-sm">About Us</h4>
+        <p class="md:pr-10">We're Greyato, a software development company based in Dallas, Texas crafting digital solutions for innovative enterprise companies.</p>
+      </div>
+      <div class="text-white md:w-1/4 mb-6 flex flex-col">
+        <h4 class="text-indigo-light pb-2 text-sm">Links</h4>
+        {{#link-to "work" class="footer-link"}}Work{{/link-to}}
+        {{#link-to "about" class="footer-link"}}About{{/link-to}}
+        {{#link-to "index" class="footer-link"}}Careers{{/link-to}}
+        {{#link-to "legal" class="footer-link"}}Legal{{/link-to}}
+      </div>
+      <div class="md:w-1/4 mb-6 flex flex-col">
+        <h4 class="text-indigo-light pb-2 text-sm">Dev Goods</h4>
+        {{#link-to "index" class="footer-link"}}Journal{{/link-to}}
+        {{#link-to "dev-goodies" class="footer-link"}}Dev Goodies{{/link-to}}
+      </div>
+      <div class="md:w-1/4 mb-6">
+        <h4 class="text-indigo-light pb-4 text-sm">Contact Us</h4>
+        {{#link-to "contact-us" class="btn ml-0"}}I have a project!{{/link-to}}
+      </div>
+    </div>
+    <div class="text-white pt-4 pb-4">
+      <h5 class="text-grey-lightest">Copyright 2019 Greyato SDC.</h5>
+    </div>
+  </div>
+</footer>

@@ -5,7 +5,8 @@
 
       <div class="w-full flex-col md:w-1/2 md:mr-4 mb-12 md:mb-0">
         <h3>Get a spec sheet or start a project</h3>
-        <form class="mb-4" method="POST" netlify name="projectForm">
+        <form class="mb-4" method="post" netlify-honeypot="bot-field" data-netlify="true" name="projectForm">
+          <input name="bot-field" type="hidden">
           <div class="mb-4">
             <label for=""></label>
             <input type="text" name="firstName" placeholder="What can we call you?" class="w-full rounded px-2 py-4 bg-grey-lightest appearance-none focus:outline-none focus:bg-indigo focus:text-white focus:shadow-lg">
@@ -18,7 +19,7 @@
 
           <div class="mb-4">
             <label for=""></label>
-            <textarea rows=6 name="projectDetails"  placeholder="Tell us about your project needs..." class="w-full rounded px-2 py-4 bg-grey-lightest appearance-none focus:outline-none focus:bg-indigo focus:text-white focus:shadow-lg"></textarea>
+            <textarea rows="6" name="projectDetails"  placeholder="Tell us about your project needs..." class="w-full rounded px-2 py-4 bg-grey-lightest appearance-none focus:outline-none focus:bg-indigo focus:text-white focus:shadow-lg"></textarea>
           </div>
 
           <div class="flex flex-col md:flex-row">

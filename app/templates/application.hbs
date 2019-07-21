@@ -1,74 +1,10 @@
-<!-- Mobile Navigation hidden upon md: + viewports -->
-<nav class="container mx-auto py-6 px-4 flex flex-row justify-between w-full z-40">
-  <!-- Logo -->
-  <a href="/" class="inline-block"><img src="logo-1-colored.png" alt="Greyato Logo" class="w-32"></a>
-
-  <!-- Nav menu wrapper -->
-  <div class="nav-menu-wrapper relative w-full relative md:absolute">
-    <!-- Nav button -->
-    <div class="block md:hidden z-30 absolute" style="right: 0;">
-      <button class="rounded py-4 px-2 w-10 bg-transparent focus:outline-none" id="nav-toggle">
-        <div class="h-1 w-full bg-indigo-dark hover:bg-indigo-light mb-1 rounded"></div>
-        <div class="h-1 w-full bg-indigo-dark hover:bg-indigo-lighter mb-1 rounded"></div>
-        <div class="h-1 w-full bg-indigo-dark hover:bg-indigo-lightest rounded"></div>
-      </button>
-    </div>
-
-      <!-- Nav-links -->
-      <div class="hidden md:block md:bg-transparent md:shadow-none md:flex md:justify-end md:top-0 md:right-0 md:relative bg-indigo w-full p-4 absolute z-10 rounded shadow-lg" id="nav-content" style="right: 50px; top: 50px;">
-        <ul class="list-reset text-center md:flex md:text-right">
-          <li class="mb-4">{{#link-to "index" class="nav-link"}}Home{{/link-to}}</li>
-          <li class="mb-4">{{#link-to "work" class="nav-link"}}Work{{/link-to}}</li>
-          <li class="mb-4">{{#link-to "services" class="nav-link"}}Services{{/link-to}}</li>
-          <li class="mb-4">{{#link-to "about" class="nav-link"}}About{{/link-to}}</li>
-          <li class="mb-4">{{#link-to "index" class="nav-link"}}Journal{{/link-to}}</li>
-          <li class="mb-4">{{#link-to "contact-us" class="btn-outline border-white text-white ml-0 md:border-indigo md:text-indigo md:ml-4  "}}Work With Us{{/link-to}}</li>
-        </ul>
-      </div>
-
-
-
-  </div>
-  <!-- End of Nav menu wrapper -->
-</nav>
-
+{{nav-menu}}
 
 <div class="">
   {{outlet}}
 </div>
 
-<footer class="bg-indigo-darkest px-4 py-10 w-full">
-  <div class="container mx-auto">
-    <div class="mb-8">
-      {{#link-to "index" }}<img src="logo-1-main.png" alt="Greyato Logo" class="w-24">{{/link-to}}
-    </div>
-    <div class="flex flex-col md:flex-row">
-      <div class="text-white md:w-2/4 max-w-xs mb-6 flex flex-col">
-        <h4 class="text-indigo-light pb-2 text-sm">About Us</h4>
-        <p class="md:pr-10">We're Greyato, a software development company based in Dallas, Texas crafting digital solutions for innovative companies using Ember.js.</p>
-      </div>
-      <div class="text-white md:w-1/4 mb-6 flex flex-col">
-        <h4 class="text-indigo-light pb-2 text-sm">Links</h4>
-        {{#link-to "work" class="footer-link"}}Work{{/link-to}}
-        {{#link-to "about" class="footer-link"}}About{{/link-to}}
-        {{#link-to "index" class="footer-link"}}Careers{{/link-to}}
-        {{#link-to "legal" class="footer-link"}}Legal{{/link-to}}
-      </div>
-      <div class="md:w-1/4 mb-6 flex flex-col">
-        <h4 class="text-indigo-light pb-2 text-sm">Dev Goods</h4>
-        {{#link-to "index" class="footer-link"}}Journal{{/link-to}}
-        {{#link-to "dev-goodies" class="footer-link"}}Dev Goodies{{/link-to}}
-      </div>
-      <div class="md:w-1/4 mb-6">
-        <h4 class="text-indigo-light pb-2 text-sm">Contact Us</h4>
-        {{#link-to "index" class="footer-link"}}I have a project!{{/link-to}}
-      </div>
-    </div>
-    <div class="text-white pt-4 pb-4">
-      <h5 class="text-grey-lightest">Copyright 2019 Greyato SDC</h5>
-    </div>
-  </div>
-</footer>
+ {{footer-menu}}
 
 <script>
   var navToggle = document.getElementById("nav-toggle");
