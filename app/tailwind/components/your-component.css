@@ -52,11 +52,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+
 }
 
 .home-image {
   background-image: url("https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
 }
+
+
 
 p {
   @apply .text-grey-dark .pb-4 .max-w-lg .pt-2 .mb-2
